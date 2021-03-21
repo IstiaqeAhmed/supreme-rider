@@ -322,18 +322,20 @@ function Login() {
           padding: "8px",
           cursor: "pointer",
           marginLeft: "300px",
+          marginBottom: "20px",
         }}
       >
         {" "}
         <img
-          style={{ borderRadius: "50%", height: "30px", width: "30px" }}
+          style={{
+            borderRadius: "50%",
+            height: "30px",
+            width: "30px",
+          }}
           src={signInLogo[1].googleLogo}
           alt=""
         />{" "}
         Continue with Google
-      </div>
-      <div style={{ marginTop: "50px" }}>
-        <img src={map} alt="" />
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ const center = {
   lng: 90.328712,
 };
 
-function Bike() {
+function Metro() {
   return (
     <LoadScript googleMapsApiKey="AIzaSyCJWJD4BmH7_2riiy2BvS2OlTs6Eu6pPxE">
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
@@ -22,6 +22,4 @@ function Bike() {
   );
 }
 
-export default React.memo(Bike);
-//   apiKey: "AIzaSyCJWJD4BmH7_2riiy2BvS2OlTs6Eu6pPxE",
-// })(Bike);
+export default React.memo(Metro);

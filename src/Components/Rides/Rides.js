@@ -7,6 +7,7 @@ import Bus from "../Map/Bus";
 import Car from "../Map/Car";
 import rides from "../FakeData/rides";
 import RideDetails from "../RideDetails/RideDetails";
+import Metro from "../Map/Metro";
 
 const Rides = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -28,8 +29,16 @@ const Rides = () => {
           </h4>{" "}
         </h1>
         <div className="row" style={{ paddingTop: "50px" }}>
-          <div className="col-md-6">
-            <h5 style={{ color: "lightGrey" }}>20 stays mar 13-17 3 guest</h5>
+          <div className="col-md-4">
+            <h5
+              style={{
+                color: "white",
+                backgroundColor: "orange",
+                borderRadius: "10px",
+              }}
+            >
+              <li>Mirpur1</li> <br /> <li>Dhanmodi</li>
+            </h5>
             <h5>Stay in {placeName}</h5>
             {rides.map((ride) => (
               <RideDetails ride={ride}></RideDetails>
@@ -37,11 +46,12 @@ const Rides = () => {
           </div>
 
           {/* Map for last page */}
-          <div className="col-md-6">
-            <h2 style={{ textAlign: "center" }}>{placeName} map is below</h2>
-            {location.pathname === "/rides/Car" && <Car></Car>}
-            {location.pathname === "/rides/Bike" && <Bike></Bike>}
-            {location.pathname === "/rides/Bus" && <Bus></Bus>}
+          <div className="col-md-8">
+            <h2 style={{ color: "blue" }}> Map is below</h2>
+            <Bike></Bike>
+            <Bus> </Bus>
+            <Car> </Car>
+            <Metro></Metro>
           </div>
         </div>
       </div>

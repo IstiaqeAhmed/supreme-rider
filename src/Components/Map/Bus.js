@@ -1,28 +1,27 @@
-// import React from "react";
-// import { Map, GoogleApiWrapper } from "google-maps-react";
+import React from "react";
+import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
-// export class Bus extends React.Component {
-//   render() {
-//     const mapStyles = {
-//       width: "95%",
-//       height: "95%",
-//     };
+const containerStyle = {
+  width: "400px",
+  height: "400px",
+};
 
-//     return (
-//       <div>
-//         <Map
-//           google={this.props.google}
-//           zoom={15}
-//           style={mapStyles}
-//           initialCenter={{
-//             lat: 24.3065,
-//             lng: 91.7296,
-//           }}
-//         />
-//       </div>
-//     );
-//   }
-// }
-// export default GoogleApiWrapper({
+const center = {
+  lat: 24.098379,
+  lng: 90.328712,
+};
+
+function Bus() {
+  return (
+    <LoadScript googleMapsApiKey="AIzaSyCJWJD4BmH7_2riiy2BvS2OlTs6Eu6pPxE">
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
+        {/* Child components, such as markers, info windows, etc. */}
+        <></>
+      </GoogleMap>
+    </LoadScript>
+  );
+}
+
+export default React.memo(Bus);
 //   apiKey: "AIzaSyCJWJD4BmH7_2riiy2BvS2OlTs6Eu6pPxE",
-// })(Bus);
+// })(Bike);

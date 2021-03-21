@@ -26,10 +26,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 export default function RideDetails(props) {
-  const { image, heading, price, rating, total } = props.ride;
+  const { image, passenger, star, rating, rent, total } = props.ride;
   const classes = useStyles();
   return (
-    <div>
+    <div
+      style={{
+        border: "500px solid blue green yellow",
+        // borderRadius: "50px",
+      }}
+    >
       <div className={classes.root}>
         <Paper className={classes.paper}>
           <Grid container spacing={2}>
@@ -42,15 +47,29 @@ export default function RideDetails(props) {
               <Grid item xs container direction="column" spacing={2}>
                 <Grid item xs>
                   <Typography gutterBottom variant="subtitle1">
-                    <strong> {heading}</strong>
+                    <strong>Passenger: {passenger} </strong>
                   </Typography>
                 </Grid>
-                <Grid item></Grid>
+                <Grid item>
+                  <Typography variant="body2" style={{ cursor: "pointer" }}>
+                    <img
+                      style={{
+                        height: "12px",
+                        width: "12px",
+                        border: "1px solid blue",
+                      }}
+                      src={star}
+                      alt=""
+                    />{" "}
+                    <strong>{rating} </strong> <br /> total: {total}
+                  </Typography>
+                </Grid>
               </Grid>
               <Grid item>
+                <br />
                 <Typography variant="subtitle1">
                   {" "}
-                  <strong>{price}</strong>{" "}
+                  <strong>Rent: {rent}</strong>{" "}
                 </Typography>
               </Grid>
             </Grid>
