@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import ButtonBase from "@material-ui/core/ButtonBase";
+import person from "../../images/peopleicon.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,7 +33,6 @@ export default function RideDetails(props) {
     <div
       style={{
         border: "500px solid blue green yellow",
-        // borderRadius: "50px",
       }}
     >
       <div className={classes.root}>
@@ -47,7 +47,10 @@ export default function RideDetails(props) {
               <Grid item xs container direction="column" spacing={2}>
                 <Grid item xs>
                   <Typography gutterBottom variant="subtitle1">
-                    <strong>Passenger: {passenger} </strong>
+                    <strong>
+                      Passenger:
+                      <img src={person} alt="" /> {passenger}{" "}
+                    </strong>
                   </Typography>
                 </Grid>
                 <Grid item>
