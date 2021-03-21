@@ -48,6 +48,18 @@ const Home = () => {
                 <p>{places[2].about}</p>
               </Carousel.Caption>
             </Carousel.Item>
+            <Carousel.Item>
+              <img
+                style={{ height: "500px" }}
+                className="d-block w-100"
+                src={places[3].image}
+                alt="Bus"
+              />
+              <Carousel.Caption>
+                <h3>{places[3].name}</h3>
+                <p>{places[3].about}</p>
+              </Carousel.Caption>
+            </Carousel.Item>
           </Carousel>
         </div>
         <div className="col-md-7">

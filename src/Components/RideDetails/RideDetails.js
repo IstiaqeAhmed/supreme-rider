@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 export default function RideDetails(props) {
-  const { image, heading, price, total } = props.ride;
+  const { image, heading, price, rating, total } = props.ride;
   const classes = useStyles();
   return (
     <div>

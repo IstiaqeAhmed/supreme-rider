@@ -28,7 +28,7 @@ const Header = () => {
             <Link to="/home">
               {" "}
               <Button style={{ margin: "3px" }} variant="light">
-                News
+                Home
               </Button>
             </Link>
             <Link to="/home">

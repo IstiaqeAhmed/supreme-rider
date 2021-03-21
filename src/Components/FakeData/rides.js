@@ -13,5 +13,9 @@ const rides = [
     image: " https://i.ibb.co/T0Z0rb0/bus.png",
     heading: "AR environment & comfortable seat& beautiful journey",
   },
+  {
+    image: " https://i.ibb.co/p2F1Dsx/metro.png'",
+    heading: "AR environment & comfortable seat& beautiful journey",
+  },
 ];
 export default rides;

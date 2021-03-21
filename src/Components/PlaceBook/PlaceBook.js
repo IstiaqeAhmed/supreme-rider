@@ -46,21 +46,30 @@ export default function PlaceBook() {
           <div
             style={{
               background: "white",
-              height: "380px",
+              height: "400px",
               width: "500px",
               padding: "50px",
               margin: "10px",
+              radius: "40px",
             }}
           >
-            <h6 style={{ color: "grey", margin: "10px" }}>Origin</h6>
+            <h6 style={{ color: "grey", margin: "10px" }}>Pick From</h6>
             <input
               type="text"
               required
               className="text"
-              placeholder="Dhaka"
+              placeholder="Mirpur-1"
               style={{ margin: "10px", width: "400px", height: "40px" }}
             />
-            <h6 style={{ color: "grey", margin: "10px" }}>Destination</h6>
+            <h6 style={{ color: "grey", margin: "10px" }}>Pick To</h6>
+            <input
+              type="text"
+              required
+              className="text"
+              placeholder="Dhanmondi"
+              style={{ margin: "10px", width: "400px", height: "40px" }}
+            />
+            <h6 style={{ color: "grey", margin: "10px" }}>Travel Mode</h6>
             <input
               type="text"
               className="text"
@@ -72,10 +81,10 @@ export default function PlaceBook() {
             <div style={{ display: "flex" }}>
               <form className={classes.container} noValidate>
                 <TextField
-                  id="date"
+                  id="time"
                   label="From"
-                  type="date"
-                  defaultValue="2021-03-20"
+                  type="time"
+                  defaultValue=" "
                   className={classes.textField}
                   InputLabelProps={{
                     shrink: true,
@@ -84,10 +93,10 @@ export default function PlaceBook() {
               </form>
               <form className={classes.container} noValidate>
                 <TextField
-                  id="date"
+                  id="time"
                   label="To"
-                  type="date"
-                  defaultValue="2021-04-20"
+                  type="time"
+                  defaultValue=" "
                   className={classes.textField}
                   InputLabelProps={{
                     shrink: true,
@@ -98,7 +107,7 @@ export default function PlaceBook() {
             <br />
             <Button
               onClick={handleRoomVisit}
-              variant="warning"
+              variant="success"
               style={{ textAlign: "center", width: "400px", height: "40px" }}
             >
               Start Journey
