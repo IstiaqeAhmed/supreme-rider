@@ -15,7 +15,9 @@ const Places = () => {
             <Card.Title>{places[0].name}</Card.Title>
           </Card.Body>
           <Link to={`/place/${places[0].name}/${places[0].description}`}>
-            <Button variant="warning">Confirm Now</Button>
+            <Button style={{ borderRadius: "14px" }} primary="warning">
+              Confirm Now
+            </Button>
           </Link>
         </Card>
         <Card style={{ borderRadius: "14px", textAlign: "center" }}>
@@ -24,7 +26,9 @@ const Places = () => {
             <Card.Title>{places[1].name}</Card.Title>
           </Card.Body>
           <Link to={`/place/${places[1].name}/${places[1].description}`}>
-            <Button variant="warning">Confirm Now</Button>
+            <Button style={{ borderRadius: "14px" }} variant="primary">
+              Confirm Now
+            </Button>
           </Link>
         </Card>
         <Card style={{ borderRadius: "14px", textAlign: "center" }}>
@@ -33,7 +37,20 @@ const Places = () => {
             <Card.Title>{places[2].name}</Card.Title>
           </Card.Body>
           <Link to={`/place/${places[2].name}/${places[2].description}`}>
-            <Button variant="warning">Confirm Now</Button>
+            <Button style={{ borderRadius: "14px" }} primary="warning">
+              Confirm Now
+            </Button>
+          </Link>
+        </Card>
+        <Card style={{ borderRadius: "14px", textAlign: "center" }}>
+          <Card.Img variant="top" src={places[3].image} />
+          <Card.Body>
+            <Card.Title>{places[3].name}</Card.Title>
+          </Card.Body>
+          <Link to={`/place/${places[3].name}/${places[3].description}`}>
+            <Button style={{ borderRadius: "14px" }} variant="primary">
+              Confirm Now
+            </Button>
           </Link>
         </Card>
       </CardDeck>

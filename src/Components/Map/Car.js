@@ -24,5 +24,5 @@
 //   }
 // }
 // export default GoogleApiWrapper({
-//   apiKey: "AIzaSyBqp0jNhuihuigijoijoijYe2FvE9DekzY67vZHyD63i_uGk",
+//   apiKey: "AIzaSyCJWJD4BmH7_2riiy2BvS2OlTs6Eu6pPxE",
 // })(Car);

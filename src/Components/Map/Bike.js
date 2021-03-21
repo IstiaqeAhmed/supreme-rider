@@ -24,5 +24,5 @@
 //   }
 // }
 // export default GoogleApiWrapper({
-//   apiKey: "AIzaSyBqp0jNhYe2FvEihjiiuj9DekzY67vZHyD63i_uGk",
+//   apiKey: "AIzaSyCJWJD4BmH7_2riiy2BvS2OlTs6Eu6pPxE",
 // })(Bike);

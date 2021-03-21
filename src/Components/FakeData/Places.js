@@ -29,7 +29,7 @@ const Places = [
       "A bus (contracted from omnibus, with variants multitude, motorbus, autobus, etc.) is a road vehicle designed to carry many passengers. Buses can have a capacity as high as 300 passengers. ... Many types of buses, such as city transit buses and inter-city coaches, charge a fare.",
     description:
       "A bus is a large wheeled vehicle meant to carry many passengers along with the driver. It is larger than a car. The name is a shortened version of omnibus, which means 'for everyone' in Latin. ... Buses are an important part of public transport in places all over the world. For your safe journey is our best priority.",
-    image: " https://i.ibb.co/p2F1Dsx/metro.png'",
+    image: "https://i.ibb.co/p2F1Dsx/metro.png'",
   },
 ];
 export default Places;
